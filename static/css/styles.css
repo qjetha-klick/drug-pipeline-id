@@ -1,0 +1,230 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 20px;
+}
+
+.filters-column {
+    width: 300px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.table-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.filter-group select,
+.filter-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.filter-group input[type="number"] {
+    width: calc(100% - 16px); /* Adjust for padding */
+}
+
+button#applyFilters {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+button#applyFilters:hover {
+    background-color: #0056b3;
+}
+
+/* DataTable Customization */
+#trialsTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px !important;
+}
+
+#trialsTable th,
+#trialsTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#trialsTable thead th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+#trialsTable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .filters-column {
+        width: 100%;
+    }
+}
+
+.chosen-container {
+    width: 100% !important;
+}
+
+.chosen-container-multi .chosen-choices {
+    padding: 5px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    background-image: none !important;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice {
+    border-radius: 3px !important;
+    background: #c8c8c8 !important;
+    color: black !important;
+    border: none !important;
+    padding: 5px 20px 5px 8px !important;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    top: 5px !important;
+}
+
+.chosen-container .chosen-drop {
+    border-color: #ddd !important;
+    border-radius: 0 0 4px 4px !important;
+}
+
+.chosen-container .chosen-results li.highlighted {
+    background: #b0c3d7 !important;
+    color: white !important;
+}
+
+/* Adjust the filter group margin for Chosen */
+.filter-group {
+    margin-bottom: 25px !important;
+}
+
+.view-toggle {
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.view-toggle button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.tables-container {
+    width: 100%;
+}
+
+.table-column {
+    width: 100%;
+}
+
+.tables-container {
+    width: 100%;
+}
+
+.table-container {
+    display: none;
+    width: 100%;
+}
+
+.table-container.active {
+    display: block;
+}
+
+.view-toggle {
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.view-toggle button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* First column (Trial ID) */
+#trialsTable th:first-child,
+#trialsTable td:first-child {
+    width: 100px !important;
+    max-width: 100px !important;
+}
+
+/* Second column (Title) */
+#trialsTable th:nth-child(2),
+#trialsTable td:nth-child(2) {
+    width: 300px !important;
+    max-width: 300px !important;
+}
+
+#drugTable th:first-child,
+#drugTable td:first-child {
+    width: 200px !important;
+    max-width: 200px !important;
+    text-align: left !important;
+}
+
+#drugTable th:nth-child(2),
+#drugTable td:nth-child(2) {
+    width: 80px !important;
+    max-width: 80px !important;
+    text-align: center !important;
+}
+
+/* Optional: Add these classes if not already in your CSS */
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
