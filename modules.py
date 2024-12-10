@@ -199,7 +199,7 @@ def run_es_query(es, filters):
         ]
 
         for drug in drug_interventions:
-            drug_dict[drug] = drug_dict.get(drug, 0) + 1
+            drug_dict[drug.upper()] = drug_dict.get(drug.upper(), 0) + 1
 
         trial = {
             "trial_id": source['nct_id'],
