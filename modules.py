@@ -2,7 +2,6 @@ import os
 import io
 import json
 import psycopg2
-import pandas as pd
 
 from contextlib import contextmanager
 
